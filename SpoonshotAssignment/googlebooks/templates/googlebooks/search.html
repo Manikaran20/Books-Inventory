@@ -1,0 +1,6 @@
+{% for item in b %}
+	<ul>
+		<img src="{{ item.2 }}"></img><a id="title" class="title" href="{{ item.1 }}">{{ item.0 }}</a>
+		<i> {{ item.3 }} </i>
+	</ul>
+{% endfor %}

@@ -1,0 +1,12 @@
+<h1>Inventory</h1>
+<ul>
+
+	{% for book in books %}
+		<li><a href="{{ book.preview_link }}">{{ book.book_name }}</a>
+			<a href="{% url 'googlebooks:books_edit' book.ID %}">edit</a>
+			<a href="{% url 'googlebooks:books_delete' book.ID %}">delete</a>
+		</li>
+	{% endfor %}
+</ul>
+
+<a href=" {% url 'googlebooks:books_add' %}">Add</a>

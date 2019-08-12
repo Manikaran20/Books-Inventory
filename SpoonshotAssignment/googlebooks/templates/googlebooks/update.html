@@ -1,0 +1,13 @@
+<h1>EDIT</h1>
+<div class="container">
+
+					<form method="post">
+
+						{% csrf_token %}
+						{{ form.errors }}
+						<div id="index_form">
+							{{ form.as_p }}
+							<button type="submit" class="btn btn-outline-info">submit</button>
+						</div>
+					</form>
+			</div>

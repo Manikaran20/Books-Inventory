@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<title>{{ Books }}</title>
+		<meta charset="UTF-8">
+	 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	   <link rel="stylesheet" type="text/css" href="https://bootswatch.com/4/flatly/bootstrap.min.css">
+	   <link href="https://fonts.googleapis.com/css?family=Rock Salt" rel='stylesheet'>
+	  </head>
+	<body>
+		<div class="container">
+
+					<form method="post">
+
+						{% csrf_token %}
+						{{ searchform.errors }}
+						<div id="index_form">
+							{{ searchform.as_p }}
+							<button type="submit" class="btn btn-outline-info">submit</button>
+						</div>
+					</form>
+			</div>
+			<a class= "inventory" href="{% url 'googlebooks:inventory' %}">Inventory</a>
+	</body>		
+</html>
