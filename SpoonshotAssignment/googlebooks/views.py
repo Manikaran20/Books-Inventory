@@ -8,7 +8,7 @@ from .book_search import gbooks
 import re, json, requests
 from django.utils import timezone
 from .base_script import start1
-
+import os
 
 
 class IndexView(TemplateView):
@@ -89,7 +89,7 @@ class BooksAdd(TemplateView):
 			url=addform.cleaned_data['url']
 			key=re.findall("id=.+?[&]", url)
 			temp_key=key[0][3:-1]
-		googleapikey="AIzaSyC1J0LWLt4s2coszPtluYSxYQWLUMvZ18Y"
+		googleapikey=os.environ.get('API_KEY')
 		book_url="https://www.googleapis.com/books/v1/volumes/{}".format(temp_key)
 		r = requests.get(url=book_url, params={'key':googleapikey})
 		my_json= r.json()
