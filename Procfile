@@ -1,0 +1,1 @@
+web: gunicorn SpoonshotAssignment.SpoonshotAssignment.wsgi --log-file -
