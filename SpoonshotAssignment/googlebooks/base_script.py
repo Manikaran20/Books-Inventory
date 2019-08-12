@@ -1,5 +1,6 @@
 import requests
 import json
+import os
 from .models import Books
 import random
 from django.utils import timezone
@@ -8,7 +9,7 @@ def start1():
 	Books.objects.all().delete()
 
 	for i in ('love', 'dog', 'mother', 'friend', 'fake', 'value','zepplin'):
-		googleapikey="AIzaSyC1J0LWLt4s2coszPtluYSxYQWLUMvZ18Y"
+		googleapikey= os.environ.get('API_KEY')
 		parms = {"q":i, 'key':googleapikey}
 		r = requests.get(url="https://www.googleapis.com/books/v1/volumes", params=parms)
 		my_json = r.json()
