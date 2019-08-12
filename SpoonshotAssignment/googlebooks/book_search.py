@@ -12,7 +12,7 @@ class my_dictionary(dict):
         self[key] = value 
 
 class gbooks():
-    googleapikey="AIzaSyC1J0LWLt4s2coszPtluYSxYQWLUMvZ18Y"    
+    googleapikey="os.ebviron.get('API_KEY')  
     def __init__(self, book_search):
         self.book_search= book_search
 
