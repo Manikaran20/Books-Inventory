@@ -25,15 +25,15 @@ It contains the list of books in store and contains information about its copies
  * Create a virtual environment.
  * git clone https://github.com/Manikaran20/Books-Inventory.git
  
- ** Install Requirements **
-   * pip install -r requirements.txt
-   * python3 manage.py makemigrations
-   * python3 manage.py migrate
- ** Running the server **
-   * python manage.py runserver
-   your app will be running on  [locally here!](http://127.0.0.1:8000/)
+** Install Requirements **
+  * pip install -r requirements.txt
+  * python3 manage.py makemigrations
+  * python3 manage.py migrate
+** Running the server **
+ * python manage.py runserver
+ your app will be running on  [locally here!](http://127.0.0.1:8000/)
     
-#** Live app on heroku ** (https://limitless-ravine-32971.herokuapp.com/googlebooks/)
+# ** Live app on heroku ** (https://limitless-ravine-32971.herokuapp.com/googlebooks/)
   
 
  
