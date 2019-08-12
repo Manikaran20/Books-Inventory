@@ -1,0 +1,30 @@
+#edit{
+	position: absolute;
+	left: 1000px;
+	color: brown;
+}
+#delete{
+	position: absolute;
+	left: 1100px;
+	color: red;
+}
+h1{
+	position: absolute;
+	left: 555px;
+	color: black;
+}
+#add{
+	position: absolute;
+	left: 555px;
+	color: blue;
+
+}
+#count{
+	position: absolute;
+	left: 700px;
+}
+#xhead{
+	position: absolute;
+	top: 100px;
+
+}

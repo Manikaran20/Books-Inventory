@@ -4,8 +4,8 @@ from .models import Books
 import random
 from django.utils import timezone
 
-def start1():
-	Books.objects.all().delete()
+def start1():  # Simple function to get some books into the store initially
+
 
 	for i in ('love', 'dog', 'mother', 'friend', 'fake', 'value','zepplin'):
 		googleapikey="AIzaSyC1J0LWLt4s2coszPtluYSxYQWLUMvZ18Y"

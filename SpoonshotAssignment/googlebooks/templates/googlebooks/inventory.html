@@ -1,12 +1,22 @@
 <h1>Inventory</h1>
+<head>
+	{% load static %}
+	<link rel="stylesheet" type="text/css" href="{% static 'googlebooks/inventorydesign.css' %}">
+	<link rel="stylesheet" type="text/css" href="https://bootswatch.com/4/sketchy/bootstrap.min.css">
+	
+</head>
+<body>
+	<div id= "xhead">
 <ul>
 
 	{% for book in books %}
 		<li><a href="{{ book.preview_link }}">{{ book.book_name }}</a>
-			<a href="{% url 'googlebooks:books_edit' book.ID %}">edit</a>
-			<a href="{% url 'googlebooks:books_delete' book.ID %}">delete</a>
+			<p id="count">{{ book.count }}</p>
+			<a id="edit" href="{% url 'googlebooks:books_edit' book.ID %}">edit</a>
+			<a id= "delete" href="{% url 'googlebooks:books_delete' book.ID %}">delete</a>
 		</li>
 	{% endfor %}
 </ul>
+<a id="add" href=" {% url 'googlebooks:books_add' %}">Add</a>
+</div>
 
-<a href=" {% url 'googlebooks:books_add' %}">Add</a>
