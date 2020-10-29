@@ -1,6 +1,6 @@
 #  Inventory 
 
-A public web portal implemented using Python/Django(MVT structure).
+A web portal implemented using Python/Django(MVT structure).
 
 It contains the list of books in store and contains information about its copies and book info link provided by Google Book Api. Anybody can access it, there is no need to login or authenticate(for now).
 
